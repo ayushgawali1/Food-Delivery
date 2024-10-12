@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App(){
 
-    const URL = "http://localhost:4000";
+    const URL = "https://food-delivery-backend-f25c.onrender.com";
 
     return(
         <div>
