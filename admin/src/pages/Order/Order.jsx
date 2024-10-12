@@ -6,12 +6,12 @@ import {assets} from "../../assets/assets";
 
 
 
-function Order({URL}) {
+function Order({url}) {
 
   const [orders,setOrders] = useState([]);
 
   const fetchAllOrders = async () => {
-    const responce = await axios.get(URL+"/api/order/list");
+    const responce = await axios.get(url+"/api/order/list");
     if(responce.data.success){
       setOrders(responce.data.data)
       console.log(responce);
@@ -23,7 +23,7 @@ function Order({URL}) {
   }
 
   const statusHandler = async (event,orderId) => {
-    const responce = await axios.post(URL+"/api/order/status",{
+    const responce = await axios.post(url+"/api/order/status",{
       orderId,
       status:event.target.value
     })
