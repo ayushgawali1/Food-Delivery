@@ -22,9 +22,9 @@ function App(){
             <div className="app-content">
                 <Sidebar />
                 <Routes>
-                    <Route path='/add' element={<Add URL={URL} />}/>
-                    <Route path='/list' element={<List URL={URL} />}/>
-                    <Route path='/order' element={<Order URL={URL} />}/>
+                    <Route path='/add' element={<Add url={URL} />}/>
+                    <Route path='/list' element={<List url={URL} />}/>
+                    <Route path='/order' element={<Order url={URL} />}/>
                 </Routes>
             </div>
         </div>
