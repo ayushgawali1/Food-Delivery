@@ -13,7 +13,7 @@ import LoginPopUp from './components/LoginPopUp/LoginPopUp';
 import axios from 'axios';
 import MyOrders from './pages/MyOrders/MyOrders';
 
-const URL = "http://localhost:4000"
+const URL = "https://food-delivery-backend-f25c.onrender.com"
 
 function App(){
 
