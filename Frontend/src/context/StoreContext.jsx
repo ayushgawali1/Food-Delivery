@@ -8,7 +8,7 @@ export const StoreContext = createContext({
     addToCart:null,
     removeFromCart:null,
     getTotalCardAmount:null,
-    URL:"http://localhost:4000",
+    URL:"https://food-delivery-backend-f25c.onrender.com",
     token:'',
     setToken:'',
 })
