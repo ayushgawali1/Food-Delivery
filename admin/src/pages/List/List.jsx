@@ -3,8 +3,7 @@ import './List.css'
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-function List() {
-  const URL = "http://localhost:4000";
+function List({URL}) {
   const [list,SetList] = useState([]);
 
   const fetchlist = async () => {
