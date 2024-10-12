@@ -4,12 +4,14 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from './pages/Home/Home';
 import Cart from './pages/Cart/Cart';
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
+import Verify from './pages/Verify/Verify';
 import {StoreContext} from './context/StoreContext';
 // import {food_list} from './assets/assets'
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 import LoginPopUp from './components/LoginPopUp/LoginPopUp';
 import axios from 'axios';
+import MyOrders from './pages/MyOrders/MyOrders';
 
 const URL = "http://localhost:4000"
 
@@ -88,10 +90,13 @@ function App(){
             ,children:[
             {path:'', element:<Home />},
             {path:'cart', element:<Cart />},
-            {path:'order', element:<PlaceOrder />}
+            {path:'order', element:<PlaceOrder />},
+            {path:'verify',element:<Verify />},
+            {path:'myorders',element:<MyOrders />}
         ]}
         
     ])
+
 
     return(
         <StoreContext.Provider value={{"food_list":food_list,cartItems,setCartItems,addToCart,removeFromCart,getTotalCardAmount,URL,token,setToken}}>
